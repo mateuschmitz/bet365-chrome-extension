@@ -1,8 +1,8 @@
 # bet365-chrome-extension
 Chrome extension to extract odds and bet information of Bet365's site
 
-Match Object
-============
+Match
+=====
 
 ```json
 
@@ -25,12 +25,12 @@ Match Object
 
 ```
 
-Match Event Object
-==================
+Match Event
+===========
 
 ```json
 "matchEvent": {
-    "time": "61:45"
+    "time": "61:45",
     "team": "FBC Melgar",
     "player": "Ruben",
     "eventType": "Attack",
@@ -39,9 +39,33 @@ Match Event Object
 }
 ```
 
-Bet Option Object
-===========
+Available Bet Options
+======================
 
 ```json
+"availableBets": [
+    {
+        "title": "Match Goals",
+        "options": [
+            {
+                "header":
+                "odds": [
+                    {
+                        "name":"",
+                        "odd":""
+                    }
+                ]
+            },
+            {
+                "odds": [
+                    {
+                        "name":"",
+                        "odd":""
+                    }
+                ]
+            }
+        ]
+    }
+]
 
 ```
