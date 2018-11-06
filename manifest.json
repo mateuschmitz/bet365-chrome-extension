@@ -1,0 +1,26 @@
+{
+    "name": "Bet365 Chrome Extension",
+    "description" : "Get info about odds and bets of Bet365's site",
+    "version": "0.1",
+    "manifest_version": 2,
+    // "icons": {
+    //     "48": "icon.png",
+    //     "128": "icon.png"
+    // },
+    "page_action": {
+        // "default_icon": {
+        //     "512" : "512x512.png"
+        // },
+        "default_title": "Bet365 Chrome Extension"
+    },
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "declarativeContent"
+    ],
+    "content_scripts": [ {
+        "js": [ "js/jquery-3.3.1.min.js", "index.js" ],
+        "matches": [ "https://mobile.bet365.com/*" ]
+    } ]
+}
